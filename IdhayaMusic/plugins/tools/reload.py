@@ -6,7 +6,7 @@ from pyrogram.enums import ChatMembersFilter
 from pyrogram.types import CallbackQuery, Message
 
 from IdhayaMusic import app
-from IdhayaMusic.core.call import Inflex
+from IdhayaMusic.core.call import Idhaya
 from IdhayaMusic.misc import db
 from IdhayaMusic.utils.database import get_assistant, get_authuser_names, get_cmode
 from IdhayaMusic.utils.decorators import ActualAdminCB, AdminActual, language
