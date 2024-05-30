@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from IdhayaMusic import app
-from IdhayaMusic.core.call import Inflex
+from IdhayaMusic.core.call import Idhaya
 from IdhayaMusic.misc import SUDOERS, db
 from IdhayaMusic.utils import AdminRightsCheck
 from IdhayaMusic.utils.database import is_active_chat, is_nonadmin_chat
