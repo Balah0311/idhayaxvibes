@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from IdhayaMusic import Carbon, YouTube, app
-from IdhayaMusic.core.call import Inflex
+from IdhayaMusic.core.call import Idhaya
 from IdhayaMusic.misc import db
 from IdhayaMusic.utils.database import add_active_video_chat, is_active_chat
 from IdhayaMusic.utils.exceptions import AssistantErr
