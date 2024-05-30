@@ -132,5 +132,4 @@ This project Is Licensed Under The MIT License. For More Details, See The [LICEN
 
 ### 🙏 Acknowledgements
 
-Special Thanks To All The Contributors , Supporters , And Users Of The Inflex Music Bot. Your Feedback And Support Keep Us Going !
-- [Yukki Music](https://github.com/TeamYukki/YukkiMusicBot) , [AviaxMusic](https://github.com/TeamAviax/AviaxMusic) And [AnonXMusic](https://github.com/AnonymousX1025/AnonXMusic) For Their Source Codes.
+Special Thanks To All The Contributors , Supporters , And Users Of The Idhaya Music Bot. Your Feedback And Support Keep Us Going !
