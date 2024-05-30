@@ -6,7 +6,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from IdhayaMusic import LOGGER, app, userbot
-from IdhayaMusic.core.call import Inflex
+from IdhayaMusic.core.call import Idhaya
 from IdhayaMusic.misc import sudo
 from IdhayaMusic.plugins import ALL_MODULES
 from IdhayaMusic.utils.database import get_banned_users, get_gbanned
