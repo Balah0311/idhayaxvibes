@@ -59,7 +59,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await Inflex.stop_stream(chat_id)
+                    await Idhaya.stop_stream(chat_id)
                 except:
                     continue
                 try:
