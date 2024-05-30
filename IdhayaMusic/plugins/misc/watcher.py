@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from IdhayaMusic import app
-from IdhayaMusic.core.call import Inflex
+from IdhayaMusic.core.call import Idhaya
 
 welcome = 20
 close = 30
