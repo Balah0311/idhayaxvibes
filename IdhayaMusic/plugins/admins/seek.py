@@ -56,7 +56,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
     if "index_" in file_path:
         file_path = playing[0]["vidid"]
     try:
-        await Inflex.seek_stream(
+        await Idhaya.seek_stream(
             chat_id,
             file_path,
             seconds_to_min(to_seek),
