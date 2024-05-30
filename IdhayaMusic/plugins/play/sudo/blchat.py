@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from InflexMusic import app
-from InflexMusic.misc import SUDOERS
-from InflexMusic.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
-from InflexMusic.utils.decorators.language import language
+from IdhayaMusic import app
+from IdhayaMusic.misc import SUDOERS
+from IdhayaMusic.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
+from IdhayaMusic.utils.decorators.language import language
 from config import BANNED_USERS
 
 
