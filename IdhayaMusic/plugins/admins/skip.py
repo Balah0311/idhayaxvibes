@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
 from IdhayaMusic import YouTube, app
-from IdhayaMusic.core.call import Inflex
+from IdhayaMusic.core.call import Idhaya
 from IdhayaMusic.misc import db
 from IdhayaMusic.utils.database import get_loop
 from IdhayaMusic.utils.decorators import AdminRightsCheck
@@ -75,7 +75,7 @@ async def skip(cli, message: Message, _, chat_id):
                     reply_markup=close_markup(_),
                 )
                 try:
-                    return await Inflex.stop_stream(chat_id)
+                    return await Idhaya.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -86,7 +86,7 @@ async def skip(cli, message: Message, _, chat_id):
                     ),
                     reply_markup=close_markup(_),
                 )
-                return await Inflex.stop_stream(chat_id)
+                return await Idhaya.stop_stream(chat_id)
             except:
                 return
     queued = check[0]["file"]
@@ -111,7 +111,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             image = None
         try:
-            await Inflex.skip_stream(chat_id, link, video=status, image=image)
+            await Idhaya.skip_stream(chat_id, link, video=status, image=image)
         except:
             return await message.reply_text(_["call_6"])
         button = stream_markup(_, chat_id)
@@ -164,7 +164,7 @@ async def skip(cli, message: Message, _, chat_id):
         await mystic.delete()
     elif "index_" in queued:
         try:
-            await Inflex.skip_stream(chat_id, videoid, video=status)
+            await Idhaya.skip_stream(chat_id, videoid, video=status)
         except:
             return await message.reply_text(_["call_6"])
         button = stream_markup(_, chat_id)
@@ -186,7 +186,7 @@ async def skip(cli, message: Message, _, chat_id):
             except:
                 image = None
         try:
-            await Inflex.skip_stream(chat_id, queued, video=status, image=image)
+            await Idhaya.skip_stream(chat_id, queued, video=status, image=image)
         except:
             return await message.reply_text(_["call_6"])
         if videoid == "telegram":
