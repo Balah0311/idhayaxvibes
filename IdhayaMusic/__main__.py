@@ -6,7 +6,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from IdhayaMusic import LOGGER, app, userbot
-from IdhayaMusic.core.call import Inflex
+from IdhayaMusic.core.call import Idhaya
 from IdhayaMusic.misc import sudo
 from IdhayaMusic.plugins import ALL_MODULES
 from IdhayaMusic.utils.database import get_banned_users, get_gbanned
@@ -38,9 +38,9 @@ async def init():
         importlib.import_module("IdhayaMusic.plugins" + all_module)
     LOGGER("IdhayaMusic.plugins").info("Successfully Imported Modules...")
     await userbot.start()
-    await Inflex.start()
+    await Idhaya.start()
     try:
-        await Inflex.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
+        await Idhaya.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
         LOGGER("IdhayaMusic").error(
             "Please turn on the videochat of your log group\channel.\n\nStopping Bot..."
@@ -48,7 +48,7 @@ async def init():
         exit()
     except:
         pass
-    await Inflex.decorators()
+    await Idhaya.decorators()
     LOGGER("IdhayaMusic").info(
         "Idhaya Music Bot Started Successfully"
     )
