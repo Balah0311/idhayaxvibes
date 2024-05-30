@@ -11,7 +11,7 @@ from IdhayaMusic.misc import db
 from IdhayaMusic.utils.database import add_active_video_chat, is_active_chat
 from IdhayaMusic.utils.exceptions import AssistantErr
 from IdhayaMusic.utils.inline import aq_markup, close_markup, stream_markup
-from IdhayaMusic.utils.pastebin import InflexBin
+from IdhayaMusic.utils.pastebin import IdhayaBin
 from IdhayaMusic.utils.stream.queue import put_queue, put_queue_index
 from IdhayaMusic.utils.thumbnails import get_thumb
 
@@ -119,7 +119,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await InflexBin(msg)
+            link = await IdhayaBin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
