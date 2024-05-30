@@ -5,7 +5,7 @@ from pyrogram.enums import ChatType
 
 import config
 from IdhayaMusic import app
-from IdhayaMusic.core.call import Inflex, autoend
+from IdhayaMusic.core.call import Idhaya, autoend
 from IdhayaMusic.utils.database import get_client, is_active_chat, is_autoend
 
 
