@@ -19,7 +19,7 @@ from IdhayaMusic.utils.database import (
     remove_active_video_chat,
 )
 from IdhayaMusic.utils.decorators.language import language
-from IdhayaMusic.utils.pastebin import InflexBin
+from IdhayaMusic.utils.pastebin import IdhayaBin
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -69,7 +69,7 @@ async def update_(client, message, _):
     _update_response_ = "<b>𝖠 𝖭𝖾𝗐 𝖴𝗉𝖽𝖺𝗍𝖾 𝖨𝗌 𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝖥𝗈𝗋 𝖳𝗁𝖾 𝖡𝗈𝗍 !</b>\n\n➣ 𝖯𝗎𝗌𝗁𝗂𝗇𝗀 𝖴𝗉𝖽𝖺𝗍𝖾𝗌 𝖭𝗈𝗐\n\n<b><u>𝖴𝗉𝖽𝖺𝗍𝖾𝗌 :</u></b>\n\n"
     _final_updates_ = _update_response_ + updates
     if len(_final_updates_) > 4096:
-        url = await InflexBin(updates)
+        url = await IdhayaBin(updates)
         nrs = await response.edit(
             f"<b>𝖠 𝖭𝖾𝗐 𝖴𝗉𝖽𝖺𝗍𝖾 𝖨𝗌 𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝖥𝗈𝗋 𝖳𝗁𝖾 𝖡𝗈𝗍 !</b>\n\n➣ 𝖯𝗎𝗌𝗁𝗂𝗇𝗀 𝖴𝗉𝖽𝖺𝗍𝖾𝗌 𝖭𝗈𝗐\n\n<u><b>𝖴𝗉𝖽𝖺𝗍𝖾𝗌 :</b></u>\n\n<a href={url}>𝖢𝗁𝖾𝖼𝗄 𝖴𝗉𝖽𝖺𝗍𝖾𝗌</a>"
         )
