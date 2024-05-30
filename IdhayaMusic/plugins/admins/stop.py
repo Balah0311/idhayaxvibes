@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from IdhayaMusic import app
-from IdhayaMusic.core.call import Inflex
+from IdhayaMusic.core.call import Idhaya
 from IdhayaMusic.utils.database import set_loop
 from IdhayaMusic.utils.decorators import AdminRightsCheck
 from IdhayaMusic.utils.inline import close_markup
