@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from IdhayaMusic import YouTube, app
-from IdhayaMusic.core.call import Inflex
+from IdhayaMusic.core.call import Idhaya
 from IdhayaMusic.misc import db
 from IdhayaMusic.utils import AdminRightsCheck, seconds_to_min
 from IdhayaMusic.utils.inline import close_markup
