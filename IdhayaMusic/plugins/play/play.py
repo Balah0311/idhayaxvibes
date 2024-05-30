@@ -7,7 +7,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from IdhayaMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from IdhayaMusic.core.call import Inflex
+from IdhayaMusic.core.call import Idhaya
 from IdhayaMusic.utils import seconds_to_min, time_to_seconds
 from IdhayaMusic.utils.channelplay import get_channeplayCB
 from IdhayaMusic.utils.decorators.language import languageCB
@@ -288,7 +288,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await Inflex.stream_call(url)
+                await Idhaya.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(_["black_9"])
                 return await app.send_message(
